@@ -37,7 +37,7 @@ Hints on functionality
 - the DFAT member will be presented the choices (rock, paper and scissors)
 - the DFAT member can choose one option
 - the game will choose a random option
-- a winner will be declared
+- a winner will be declared and an option to play again
 
 ## Basic Rules
 
