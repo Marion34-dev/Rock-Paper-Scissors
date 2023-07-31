@@ -55,7 +55,7 @@ In code review we'll be hoping to see:
 
 #### Multiplayer
 
-Change the game so that two DFAT members can play against each other ( _yes there are two of them_ ).
+Change the game so that two DFAT members can play against each other ( _yes there are two of them and they'll be playing on the same computer_ ).
 
 #### Rock, Paper, Scissors, Spock, Lizard
 
