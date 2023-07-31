@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h1>Current Player: <%= name %>!</h1>
+    <h1>What do you choose?</h1>
+
+    <form action="/turn" method="post">
+        <input class="btn btn-info" id="choice-button" type="submit" value="Rock" name="choice">
+        <input class="btn btn-info" id="choice-button" type="submit" value="Paper" name="choice">
+        <input class="btn btn-info" id="choice-button" type="submit" value="Scissors" name="choice">
+    </form>
+</body>
+
+</html>
