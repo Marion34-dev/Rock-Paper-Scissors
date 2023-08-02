@@ -7,8 +7,7 @@
 </head>
 
 <body>
-    <h1>Current Player: <%= name %>!</h1>
-    <h1>What do you choose?</h1>
+    <h1><%= name %>, time to choose your weapon!</h1>
 
     <form action="/turn" method="post">
         <input class="btn btn-info" id="choice-button" type="submit" value="Rock" name="choice">
