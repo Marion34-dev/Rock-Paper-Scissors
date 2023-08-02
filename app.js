@@ -1,18 +1,23 @@
+// Import the required modules and set up the express app
 const express = require('express');
 const app = express();
 const port = 3000;
 
+// Set the view engine to EJS and use the bodyParser middleware
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 
+// Import the routers
 const indexRouter = require('./routes/index.js');
 const gameRouter = require('./routes/game.js');
 const turnRouter = require('./routes/result.js');
 
+// Use the indexRouter first, so the index page is shown first
 app.use('/', indexRouter);
 app.use('/game', gameRouter);
-app.use('/turn', turnRouter);
+app.use('/result', turnRouter);
 
+// Start the server
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://localhost:${port}`);
 });

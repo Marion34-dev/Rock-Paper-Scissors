@@ -1,11 +1,7 @@
 class Player {
-    constructor(name) {
+    constructor(name, weapon) {
         this.name = name;
-        this.choice = null;
-    }
-
-    choice(weapon) {
-        this.weapon;
+        this.weapon = weapon;
     }
 }
 

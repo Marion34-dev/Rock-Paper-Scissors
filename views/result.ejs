@@ -3,18 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Rock Paper Scissors Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 </head>
 
-<body>
-    <h1><%= name %>, you chose: <%= weapon %></h1>
-    <h2>What's your name?</h2>
-    <form action="/game" method="post">
-        <p>Player 1: <input id="player1-name-textbox" type="text" name="player1"></p>
-        <!-- <p>Player 2: <input id="player2-name-textbox" type="text" name="player2"></p> -->
+<body style="background-color: rgb(169, 245, 245); text-align: center; font: bold; padding:30px">
+    <h2><%= name %>, you chose: <%= weapon %></h2>
+    <h2>Your opponent chose: <%= computerWeapon %></h2>
+    <h1><%= result %></h1>
 
-        <input id="names-submit" type="submit" value="Submit!">
-    </form>
+    <form id="play-again-form" action="/play-again" method="post">
+        <input id="playAgain-submit" class="btn btn-secondary" type="submit" value="Play Again">
+     </form>
+
 </body>
+
+<script>
+    document.getElementById("play-again-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        fetch('/play-again', { method: 'POST' })
+            .then(() => window.location.href = '/')
+            .catch((error) => console.error('Error occurred while playing again:', error));
+    });
+</script>
+
 
 </html>

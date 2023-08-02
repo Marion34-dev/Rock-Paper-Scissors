@@ -1,23 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const Battle = require('../src/battle.js');
-const Player = require('../src/player.js');
 
-router.post('/', (req, res) => {
-    const battle = new Battle();
-    const names = [req.body.player1, "Your Opponent"];
-    battle.setup(names);
-    req.app.locals.battle = battle;
-
-    res.redirect('/game');
-})
-
-router.get('/', (req, res) => {
-    const player = req.app.locals.battle.currentPlayer();
-
-    res.render('game', {
-        name: player.name,
+router.route('/')
+    // Sets the 'name' property in app.locals to the value received from 'player1' in the request body.
+    // Redirects to the '/game' URL path.
+    .post((req, res) => {
+        req.app.locals.name = req.body.player1;
+        res.redirect('/game');
+    })
+    
+    // Renders the 'game.ejs' view template and passes the 'name' property from app.locals as a parameter.
+    .get((req, res) => {
+        res.render('game', {
+            name: req.app.locals.name,
+        });
     });
-})
 
 module.exports = router;

@@ -3,16 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Rock Paper Scissors Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1><%= name %>, time to choose your weapon!</h1>
+<body style="background-color: rgb(169, 245, 245); text-align: center; font: bold; padding:30px">
+    <h1>
+        <%= name %>, choose wisely!
+    </h1>
 
-    <form action="/turn" method="post">
-        <input class="btn btn-info" id="choice-button" type="submit" value="Rock" name="choice">
-        <input class="btn btn-info" id="choice-button" type="submit" value="Paper" name="choice">
-        <input class="btn btn-info" id="choice-button" type="submit" value="Scissors" name="choice">
+    <form action="/result" method="post">
+        <input class="btn btn-success" type="submit" value="Rock" name="weapon">
+        <input class="btn btn-success" type="submit" value="Paper" name="weapon">
+        <input class="btn btn-success" type="submit" value="Scissors" name="weapon">
     </form>
 </body>
 
