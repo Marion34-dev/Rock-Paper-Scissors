@@ -1,13 +1,13 @@
 # Welcome to the Rock Paper Scissors Challenge
 
-This Javascript program is a Rock Paper Scissors game developed with Express.
+This Javascript program is a Rock Paper Scissors game developed with Express. <br>
 The testing was done with Mocha and Chai-HTTP.
 
-## Rules
+### Rules
 
-- Rock beats Scissors
-- Scissors beats Paper
-- Paper beats Rock
+- Rock beats Scissors <br>
+- Scissors beats Paper <br>
+- Paper beats Rock <br>
 
 ### User stories
 
@@ -21,14 +21,17 @@ So that I can enjoy myself away from the daily grind
 I would like to be able to play rock/paper/scissors
 ```
 
-Functionality:
+#### Functionality: <br>
 
-- the DFAT member should be able to enter their name before the game
-- the DFAT member will be presented the choices (rock, paper and scissors)
-- the DFAT member can choose one option
-- the game will choose a random option
-- a winner will be declared and an option to play again
+- the DFAT member should be able to enter their name before the game <br>
+- the DFAT member will be presented the choices (rock, paper and scissors) <br>
+- the DFAT member can choose one option <br>
+- the game will choose a random option <br>
+- a winner will be declared and an option to play again <br>
 
-In code review we'll be hoping to see:
+## How to use
 
-- High test coverage
+You can fork this repo and clone it to your local machine. <br>
+You will then be able to run the command `npm install`, `npm start` and `npm test`.
+
+Note: you will need to have Node.js and npm installed
