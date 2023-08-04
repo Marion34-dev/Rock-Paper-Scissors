@@ -3,11 +3,6 @@
 This Javascript program is a Rock Paper Scissors game developed with Express. <br>
 The testing was done with Mocha and Chai-HTTP.
 
------------
-## This app has been deployed at the following address: <br> 
-https://rock-paper-scissors-challenge.onrender.com/
------------
-
 ### Rules
 
 - Rock beats Scissors <br>
@@ -34,7 +29,7 @@ I would like to be able to play rock/paper/scissors
 - the game will choose a random option <br>
 - a winner will be declared and an option to play again <br>
 
-### How to use
+## How to use
 
 You can fork this repo and clone it to your local machine. <br>
 You will then be able to run the command `npm install`, `npm start` and `npm test`.
