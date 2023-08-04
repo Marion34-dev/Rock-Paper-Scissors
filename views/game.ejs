@@ -9,9 +9,11 @@
 </head>
 
 <body style="background-color: rgb(169, 245, 245); text-align: center; font: bold; padding:30px">
-    <h1>
-        <%= name %>, choose wisely!
-    </h1>
+    <div style="position: relative; top: 100px;">
+        <h1>
+            <%= name %>, choose wisely!
+        </h1>
+    </div>
 
     <form action="/result" method="post">
         <input class="btn btn-success" type="submit" value="Rock" name="weapon">
