@@ -1,11 +1,11 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const Session = require('../src/session.js');
+const Battle = require('../src/battle.js');
 
 chai.use(chaiHttp);
 
-describe('Testing the Session class', () => {
-    const testPlayer = new Session("Jules", "Rock");
+describe('Testing the Battle class', () => {
+    const testPlayer = new Battle("Jules", "Rock");
 
     describe('Testing that the name of the player has been correctly passed in', () => {
         it('should render "Jules"', () => {
